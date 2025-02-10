@@ -4,17 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Flipper</title>
+    <link rel="icon" href="/public/icons/colour.png" />
     <link rel="stylesheet" href="/src/shared/styles/global.css" />
     <link rel="stylesheet" href="/src/apps/color-flipper/styles.css" />
   </head>
   <body>
     <div class="title-container">
-      <p class="app-title">Color Flipper</p>
+      <h1>Color Flipper</h1>
     </div>
     <div class="app-container">
+      <div class="description-container">
+        <p>Click on the box below to generate a new random color.</p>
+      </div>
       <div id="color-box">
         <p id="color-code">Color Code</p>
       </div>
+      <div class="description-container">
+        <p>Or enter a hex color to be displayed.</p>
+      </div>
+      <div class="input-container">
+        <input
+          type="text"
+          id="hex-input"
+          placeholder="hex-code"
+          class="hex-input"
+        />
+        <button id="hex-button" class="hex-button">Enter</button>
     </div>
     <script src="/src/apps/color-flipper/app.js"></script>
   </body>

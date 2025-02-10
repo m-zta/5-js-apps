@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #4d4d4d;
+  background-color: #000028;
 }
 
 h1,
@@ -15,6 +15,11 @@ h6,
 p,
 a {
   color: #ffffff;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 ul {
@@ -36,5 +41,5 @@ ul {
 }
 
 .nav-link:hover {
-  background: #007070;
+  background: #009999;
 }

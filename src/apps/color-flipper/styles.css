@@ -1,29 +1,32 @@
 .title-container {
-  height: 150px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .app-container {
-  height: calc(100vh - 150px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.app-title {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
 #color-box {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px;
+
   border-radius: 40px;
   transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
   background-color: #f0f0f0;
@@ -45,4 +48,43 @@
   font-size: 3rem;
   font-weight: bold;
   -webkit-text-stroke: 2px black;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hex-input {
+  width: 120px;
+  height: 40px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 10px;
+  color: #ffffff;
+  background-color: #00183b;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+
+#hex-input:focus {
+  outline: none;
+}
+
+#hex-button {
+  width: 120px;
+  height: 46px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 10px;
+  color: #000028;
+  background-color: #00cccc;
+  border: none;
+  border-radius: 25px;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+#hex-button:active {
+  transform: scale(0.98);
 }

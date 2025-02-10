@@ -1,8 +1,7 @@
 const colorBox = document.getElementById("color-box");
 const colorCode = document.getElementById("color-code");
-
-// TODO:
-// -
+const hexInput = document.getElementById("hex-input");
+const hexButton = document.getElementById("hex-button");
 
 const getRandomColor = () => {
   return `#${Math.floor(Math.random() * 16777215)
@@ -10,13 +9,20 @@ const getRandomColor = () => {
     .padStart(6, "0")}`; // Ensure hex code has 6 characters
 };
 
-const setRandomBoxColor = () => {
-  const randomColor = getRandomColor();
-
-  colorBox.style.backgroundColor = randomColor;
-  colorCode.textContent = randomColor;
-
-  console.log("Color changed to:", randomColor);
+const setColor = (hexValue) => {
+  colorBox.style.backgroundColor = hexValue;
+  colorCode.textContent = hexValue;
+  hexInput.value = hexValue;
 };
 
-colorBox.addEventListener("click", setRandomBoxColor);
+const setRandomColor = () => {
+  const randomColor = getRandomColor();
+  setColor(randomColor);
+};
+
+const setHexColor = () => {
+  setColor(hexInput.value);
+}
+
+colorBox.addEventListener("click", setRandomColor);
+hexButton.addEventListener("click", setHexColor);
