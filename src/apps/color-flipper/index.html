@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Flipper</title>
-    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/src/shared/styles/global.css" />
+    <link rel="stylesheet" href="/src/apps/color-flipper/styles.css" />
   </head>
   <body>
-    <h1>Color Flipper</h1>
-    <h2>#f15025</h2>
-    <button id="color-button">click me</button>
-    <div id="color-container">Color</div>
+    <div class="title-container">
+      <p class="app-title">Color Flipper</p>
+    </div>
+    <div class="app-container">
+      <div id="color-box">
+        <p id="color-code">Color Code</p>
+      </div>
+    </div>
     <script src="/src/apps/color-flipper/app.js"></script>
   </body>
 </html>

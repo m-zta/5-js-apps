@@ -1,0 +1,49 @@
+.title-container {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#color-box {
+  width: 400px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 40px;
+
+  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.2);
+  background-color: #f0f0f0;
+}
+
+/* Scale down when clicked */
+#color-box:active {
+  transform: scale(0.98);
+}
+
+#color-code {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  -webkit-text-stroke: 2px black;
+}
