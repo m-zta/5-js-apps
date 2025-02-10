@@ -1,3 +1,16 @@
+:root {
+  --primary-background-color: #000028;
+  --secondary-background-color: #333353;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #848a9e;
+  --primary-button-color: #00e6dc;
+  --button-text-color: #000028;
+  --siemens-color: #009999;
+  --shadow-color: #ffffff;
+  --mint-green: #00ffb9;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -20,6 +33,10 @@ a {
 h1 {
   font-size: 3rem;
   font-weight: bold;
+}
+
+p {
+  font-size: 1.5rem;
 }
 
 ul {
