@@ -33,9 +33,11 @@ a {
 h1 {
   font-size: 3rem;
   font-weight: bold;
+  margin-top: 80px;
 }
 
 p {
+  margin: 20px 0;
   font-size: 1.5rem;
 }
 
@@ -44,19 +46,24 @@ ul {
   list-style: none;
 }
 
-.nav-link {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 18px;
-  background: #009999;
-  color: white;
-  margin-bottom: 5px;
-  padding: 10px 15px;
-  border-radius: 10px;
-  transition: 0.1s;
-  width: 240px;
+
+.title-container {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-link:hover {
-  background: #009999;
+.description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

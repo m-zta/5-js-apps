@@ -1,0 +1,31 @@
+#app-list {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  border-radius: 20px;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+li:active {
+  transform: scale(0.98);
+}
+
+li:hover {
+  box-shadow: 0 0 10px 2px var(--shadow-color);
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--button-text-color);
+  background: var(--primary-button-color);
+  margin-bottom: 5px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  transition: 0.1s;
+  width: 240px;
+}

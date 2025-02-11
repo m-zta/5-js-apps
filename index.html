@@ -6,17 +6,23 @@
     <title>JavaScript Apps</title>
     <link rel="icon" href="/public/icons/app-store.png" />
     <link rel="stylesheet" href="/src/shared/styles/global.css" />
+    <link rel="stylesheet" href="/src/styles.css" />
   </head>
   <body>
-    <h1>Welcome to my JavaScript Apps</h1>
-    <p>Select an app below:</p>
+    <div class="title-container">
+      <h1>Welcome to my JavaScript Apps</h1>
+    </div>
+    <div class="app-container">
+      <div class="description-container">
+        <p>Select an app below:</p>
+      </div>
 
-    <nav>
-      <ul id="app-list">
-        <!-- JS will populate this list -->
-      </ul>
-    </nav>
-
+      <nav>
+        <ul id="app-list">
+          <!-- JS will populate this list -->
+        </ul>
+      </nav>
+    </div>
     <script src="/src/main.js"></script>
   </body>
 </html>
