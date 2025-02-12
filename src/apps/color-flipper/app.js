@@ -16,12 +16,13 @@ const setColor = (hexValue) => {
 };
 
 const setRandomColor = () => {
-  const randomColor = getRandomColor();
-  setColor(randomColor);
+  const color = getRandomColor();
+  setColor(color);
 };
 
 const setHexColor = () => {
-  setColor(hexInput.value);
+  const hexValue = hexInput.value;
+  setColor(hexValue);
 }
 
 colorBox.addEventListener("click", setRandomColor);
