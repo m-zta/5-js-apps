@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "node --env-file=.env --watch src/apps/exp-server/app.js"
   },
   "devDependencies": {
     "vite": "^6.1.0"
